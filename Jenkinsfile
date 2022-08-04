@@ -9,6 +9,7 @@ pipeline {
         }
         stage("Deploy") {
              steps {
+                sh "sudo npm start"
                 echo "Deploy Successfull"
             }
         }

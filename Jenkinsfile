@@ -9,7 +9,7 @@ pipeline {
         }
         stage("Deploy") {
              steps {
-                sh "sudo cp -r /var/lib/jenkins/workspace/React/build /var/www/jenkins-react-app/"
+                echo "Deploy Successfull"
             }
         }
     }

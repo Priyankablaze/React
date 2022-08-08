@@ -15,7 +15,7 @@ pipeline {
                 sh "mkdir -p /var/www/jenkins-react-app/"
                 sh "cd /var/lib/jenkins/workspace/React/build/"
                 sh "pwd"
-                sh "cp -r /var/lib/jenkins/workspace/React/build/ /var/www/jenkins-react-app/
+                sh "cp -r /var/lib/jenkins/workspace/React/build/ /var/www/jenkins-react-app/"
             }
         }
     }

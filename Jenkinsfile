@@ -10,8 +10,10 @@ pipeline {
         }
         stage("Deploy") {
             steps {
-                sh " rm -rf /var/www/jenkins-react-app"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/jenkins-react-app/"
+                sh "rm -rf /var/www/jenkins-react-app"
+                sh "cd /var/lib/jenkins/workspace/React/build"
+                sh "pwd"
+                sh "cp -r /var/lib/jenkins/workspace/React/build /var/www/jenkins-react-app/"
             }
         }
     }
